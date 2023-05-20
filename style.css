@@ -1,8 +1,11 @@
 :root
 {
-    --bs-body-bg: #ccf5df;
+    --bs-body-bg: #ffffff;
 }
-.navber
+body
 {
-    height: 4rem;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1140px;
 }

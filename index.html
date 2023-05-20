@@ -1,412 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Add bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style.css">
-  <script src="js/bootstrap.min.js"></script>
-
-  <title>Hello bootstrap!</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <title>Colmar Academy</title>
+    <link rel="icon" type="image/x-icon" href="./images/ic-logo.svg">
 </head>
-
 <body>
-  <!-- header start -->
-  <div class="container navber">
-    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <img src="/images/ic-logo.svg" alt="logo">
-        <span class="fs-4">Simple header</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
+    <!-- navbar start -->
+     <nav>
+            <a href="#" class="logo">
+                <img src="/images/ic-logo.svg" alt="logo">
+                <p>COLMAR</p>
+                <p>ACADMY</p>
+            </a>
+            <ul class="nav">
+                <li><a href="#"><img src="/images/ic-on-campus.svg" alt=""><p>On Campus</p></a></li>
+                <li><a href="#"><img src="/images/ic-online.svg" alt=""><p>Online</p></a></li>
+                <li><a href="#"><img src="" alt=""><p>or companies</p></a></li>
+                <li><a href="#"><img src="/images/ic-login.svg" alt=""><p>Sign in</p></a></li>
+            </ul>
+     </nav>
+    <!-- navbar end -->
+    <!-- header start -->
+    <header>
+        <div class="hd-l">
+            <img src="/images/banner.jpg" alt="">
+        </div>
+        <div class="hd-r">
+            <div class="hd-text">
+                <h1>Learn sometinhg new everyday</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Start here</button>
+            </div>
+        </div>
     </header>
-  </div> 
-  <!-- header start -->
-  <!-- hero end -->
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="/images/banner.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-          height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="gku8y9">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="fl4szs">Default</button>
+    <!-- header end -->     
+    <!-- info start -->
+    <section class="info">
+        <div class="if-l">
+            <div class="if-l-img">
+                <img src="/images/information-main.jpg" alt="">
+            </div>
+            <div class="if-l-text">
+                <h2>It doesn't hurt to keep practicing</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum vel illo cum labore delectus neque voluptatibus minima officia laudantium consequatur facilis reprehenderit blanditiis ducimus accusamus culpa ex, dignissimos, cumque assumenda.</p>
+                <p>Emanuel, Sr Stategist at Hiring.com</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- hero end -->
-  <!-- info start -->
-  <div class="container px-4 py-5">
-    <h2 class="pb-2 border-bottom">Features with title</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-      <div class="col d-flex flex-column align-items-start gap-2">
-
-        <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with
-          another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-      </div>
-
-      <div class="col">
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#gear-fill"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#speedometer"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#table"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- info end -->
-  <!-- coures start -->
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        <div class="if-r">
+            <div class="if-r-cotainer">
+                <div class="if-r-item">
+                    <div class="if-r-item-img">
+                        <img src="/images/information-orientation.jpg" alt="" class="if-r-item-img-desktop">
+                        <img src="/images/information-orientation-mobile.jpg" alt="" class="if-r-item-img-moblie">
+                    </div>
+                    <div class="if-r-item-text">
+                        <h3>Orientation date</h3>
+                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a href="#">Readme</a>
+                    </div>                
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="if-r-item">
+                    <div class="if-r-item-img">
+                        <img src="/images/information-campus.jpg" alt="" class="if-r-item-img-desktop">
+                        <img src="/images/information-campus-mobile.jpg" alt="" class="if-r-item-img-moblie">
+                    </div>
+                    <div class="if-r-item-text">
+                        <h3>Our campus</h3>
+                        <p>Find which campus is close by you</p>
+                        <a href="#">Readme</a>
+                    </div>                
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="if-r-item">
+                    <div class="if-r-item-img">
+                        <img src="/images/information-guest-lecture.jpg" alt="" class="if-r-item-img-desktop">
+                        <img src="/images/information-guest-lecture-mobile.jpg" alt="" class="if-r-item-img-moblie">
+                    </div>
+                    <div class="if-r-item-text">
+                        <h3>Our guest lecture</h3>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#">Readme</a>
+                    </div>                
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
-          </div>
         </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+    </section>
+    <!-- info end -->
+    <!-- course start -->
+    <section class="course">
+        <h2 id="coursehead">Start learning</h2>
+        <div class="course-container">
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-software.jpg" alt="">
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="course-item-text">
+                    <h2>Software engineering</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>Web Development, Mobile Development,iOT,APIs</p>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-computer-art.jpg" alt="">
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="course-item-text">
+                    <h2>Computer Art</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>Imaging & Design, Web Design,Motion Graphics & Visual Effect,Computer Animation</p>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-design.jpg" alt="">
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="course-item-text">
+                    <h2>Design</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>User Experience Design, User Research, Visual Design</p>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
             </div>
-          </div>
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-data.jpg" alt="">
+                </div>
+                <div class="course-item-text">
+                    <h2>Data</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>Data Science, Big Data,SQL, Data Visualization</p>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-business.jpg" alt="">
+                </div>
+                <div class="course-item-text">
+                    <h2>Business</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>Peoduct Development, Business Development, Startup</p>
+                </div>
+            </div>
+            <div class="course-item">
+                <div class="course-item-img">
+                    <img src="/images/course-marketing.jpg" alt="">
+                </div>
+                <div class="course-item-text">
+                    <h2>Marketing</h2>
+                    <p class="course-type">COURSES</p>
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- coures end -->
-  <!-- thesis start -->
-  <div class="container px-4 py-5">
-    <h2 class="pb-2 border-bottom">Features with title</h2>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-      <div class="col d-flex flex-column align-items-start gap-2">
-
-        <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-        <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with
-          another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-      </div>
-
-      <div class="col">
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection"></use>
-              </svg>
+    </section>
+    <!-- course end -->
+    <!-- thesis start -->
+    <section class="thesis">
+        <h2 class="ts-headtext">Thesis exhibit</h2>
+        <div class="ts-container">
+            <div class="ts-l">
+                <div class="ts-l-vdo">
+                    <video src="/videos/thesis.mp4" ></video>
+                </div>
+                <div class="ts-l-text">
+                    <h2>Reimegine urban</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe expedita voluptatum ab consectetur eaque dolorum facilis ad eum in debitis! Quas, vel minus fugiat quos excepturi iste ex maxime ullam!</p>
+                </div>
             </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#gear-fill"></use>
-              </svg>
+            <div class="ts-r">
+                <div class="ts-r-container">
+                    <div class="ts-r-item">
+                        <div class="ts-r-item-img">
+                            <img src="./images/thesis-fisma.jpg" alt="" >
+                        </div>
+                        <div class="ts-r-item-text">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p>Designer showcase of new phototype product</p>
+                        </div>                
+                    </div>   
+                    <div class="ts-r-item">
+                        <div class="ts-r-item-img">
+                            <img src="./images/thesis-now-and-then.jpg" alt="" >
+                        </div>
+                        <div class="ts-r-item-text">
+                            <h3>Now and then</h3>
+                            <p>Research study about New York</p>
+                        </div>                
+                    </div>   
+                </div>
             </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#speedometer"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-
-          <div class="col d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#table"></use>
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Featured title</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
+    </section>
+    <!-- thesis end -->
+    <!-- footer start -->
+    <footer>
+        <div class="ft-l">
+            <p>	&#169; 2016 Colmar Academy. All rights reserved</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- thesis end -->
-  <!-- footer start -->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use>
-            </svg></a></li>
-      </ul>
+        <div class="ft-r">
+            <div class="ft-r-container">
+                <p>Terms</p>
+                <p>Privacy</p>
+            </div>
+        </div>
     </footer>
-  </div>
-  <!-- footer end -->
-
-
+    <!-- footer end -->
 </body>
-
 </html>

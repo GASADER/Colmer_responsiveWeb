@@ -1,0 +1,518 @@
+/* global selectors */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap');
+:root
+{
+    --primary:#086788; 
+    --secondary:#31bae7;
+    --light: #F7FAFF;
+    --dark: #1d1d27;
+    --gray:#777;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h1,h2,h3
+{
+    color: var(--dark);
+}
+body 
+{
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+/* global selectors */
+/* navber desktop */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 1.5rem;
+    position: fixed;
+    background: var(--primary);
+    width: 100%;
+    max-width: 1140px;
+    z-index: 1;
+}
+nav a:hover,.nav li:hover,.nav p:hover
+{
+    scale: 1.1 ;
+    color: var(--light);
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark);
+}
+.logo img
+{
+    height: 2rem;
+    width: auto;   
+}
+.logo p:nth-child(2)
+{
+    font-weight: 700;
+}
+.nav    
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav a
+{
+    text-decoration: none;
+    color: var(--dark);
+}
+.nav li
+{
+    list-style: none;
+}
+.nav img
+{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+/* navber desktop */
+/* header desktop */
+header
+{
+    display: flex;
+    background: var(--primary);
+    padding-top: 4rem;
+}
+.hd-l
+{
+    width: 60%;
+}
+.hd-l img
+{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem;
+}
+.hd-r
+{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+}
+.hd-r p
+{
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.hd-r button
+{
+    padding: 0.5rem 0;
+    width: 80%;
+    background: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+}
+.hd-r button:hover
+{
+    color: var(--dark);
+    background: var(--light);
+}
+/* header desktop */
+/* info desktop */
+.info
+{
+    display: flex;
+    background: var(--light);
+}
+.if-l
+{
+    width: 60%;
+}
+.if-l-img img
+{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.5rem;
+}
+.if-l-text
+{
+    padding: 0 1.5rem;
+}
+.if-l-text p:nth-child(2)
+{
+    padding: 1.5rem 0;
+}
+.if-l-text p:nth-child(3)
+{
+    padding: 0 0 2rem 0;
+}
+.if-r
+{
+    width: 40%;
+}
+.if-r-cotainer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.if-r-item
+{
+    display: flex;
+}
+.if-r-item:hover
+{
+    background: var(--gray);
+    scale: 1.1 ;
+    cursor: pointer;
+}
+.if-r-item-img
+{
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+.if-r-item-img img
+{
+    width: 100%;
+}
+.if-r-item-img-moblie
+{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.if-r-item-text
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.if-r-item-text p
+{
+    padding: 0.5rem 0;
+}
+.if-r-item-text a
+{
+    text-decoration: none;
+    color: var(--secondary);
+}
+/* info desktop */
+/* course desktop */
+.course
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary);
+}
+#coursehead
+{
+    padding: 2rem;
+}
+.course-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4.5rem 2rem 4.5rem;
+    justify-content: center;
+    gap: 2rem;
+}
+.course-item
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: var(--light);
+    overflow: hidden;
+}
+.course-item:hover
+{
+    background: var(--gray);
+    scale: 1.1 ;
+    cursor: pointer;
+}
+.course-item-img img
+{
+    width: 100%;
+    height: auto;
+}
+.course-item-text
+{
+    padding: 1rem 1rem 1.5rem 1rem;
+
+}
+.course-type
+{
+    padding: 0.5rem 0;
+}
+/* thesis desktop */
+.thesis
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--light);
+}
+.thesis h2
+{
+    padding: 2rem 0;
+}
+.ts-container
+{
+    display: flex;
+}
+.ts-l
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 1.5rem;
+}
+.ts-l-vdo video
+{
+    width: 100%;
+    height: auto;
+}
+.ts-l-text h2
+{
+    padding-top: 1.5rem;
+}
+.ts-l-text p
+{
+    padding: 0.5rem 0 2rem 0;
+}
+.ts-r
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.ts-r-item
+{
+    display: flex;
+}
+.ts-r-item:hover
+{
+    background: var(--gray);
+    scale: 1.1 ;
+    cursor: pointer;
+}
+.ts-r-item-img 
+{
+    width: 35%;
+    padding: 1rem;
+}
+.ts-r-item-img img
+{
+    width: 100%;
+    height: auto;
+}
+.ts-r-item-text
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+/* thesis desktop */
+/* footer desktop */
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: var(--primary);
+}
+.ft-r-container
+{
+    display: flex;
+    gap: 1rem;
+}
+/* footer desktop */
+/* moblie */
+@media only screen and (max-width: 500px){
+    /* navber moblie */
+    nav
+    {
+        justify-content: center;
+    }
+    .logo
+    {
+        flex: 1;
+    }
+    .logo p
+    {
+        display: none;
+    }
+    .nav
+    {   
+        flex: 3;
+        gap: 0;
+        justify-content: space-around;
+    }
+    .nav img
+    {
+        height: 2rem;
+        width: auto;   
+        visibility: visible;
+        position: static;
+    }
+    .nav p
+    {
+        display: none;
+    }
+    .nav li:nth-child(3)
+    {
+        position: absolute;
+    }
+    /* navber moblie */
+    /* header moblie */
+    header
+    {
+        flex-direction: column;
+    }
+    .hd-l,.hd-r
+    {
+        width: 100%;
+    }
+    .hd-l img
+    {
+        padding: 0;
+    }
+    .hd-r
+    {
+        padding: 2rem 1rem;
+        min-width: 0;
+    }
+    .hd-r p
+    {
+        padding: 1.5rem 0 1rem 0;
+    }
+    .hd-r button
+    {
+        width: 100%;
+    }
+    /* header moblie */
+    /* info moblie */
+    .if-l
+    {
+        display: none;
+    }
+    .if-r
+    {
+        width: 100%;
+    }
+    .if-r-item
+    {
+        flex-direction: column; 
+    }
+    .if-r-item:hover
+    {
+        background: var(--gray);
+        scale: 1 ;
+    }
+    .if-r-item-img
+    {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .if-r-item-img-desktop
+    { 
+        display: none;
+        position: absolute;
+    }
+    .if-r-item-img-moblie
+    {
+        width: 100%;
+        height: auto;
+        visibility: visible;
+        position: static;
+    }
+    .if-r-item-text
+    {
+        width: 100%;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    /* info moblie */
+    /* course moblie */
+    .course
+    {
+        padding: 0 1rem;
+        background: var(--light);
+    }
+    #coursehead
+    {
+        padding-bottom: 1rem;
+    }
+    .course-container
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        padding: 0 0 2rem 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .course-item-img
+    {
+        display: none;
+    }
+    .course-item-text
+    {
+        padding-bottom: 2rem;
+    }
+    .course-item-text p
+    {
+        display: none;
+        padding: 0;
+    }
+    .course-item
+    {
+        width: 100%;
+        background: var(--secondary);
+    }
+    .course-item:hover
+    {
+        background: var(--gray);
+        scale: 1 ;
+    }
+    /* course moblie */
+    /* thesis moblie */
+    .ts-headtext
+    {
+        padding: 2rem 0 1rem 0;
+    }
+    .ts-l
+    {
+        width: 100%;
+        padding: 0 0 1.5rem 0;
+    }
+    .ts-l-text,.ts-r
+    {
+        display: none;
+    }
+    /* thesis moblie */
+    /* footer moblie */
+    .ft-r-container
+    {
+        display: none;
+    }
+    /* footer moblie */
+}
+/* moblie */
